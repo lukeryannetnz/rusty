@@ -1,2 +1,2 @@
 # Rusty
-This repo is my experiments dabbling with rustlang. At least at first it will mainly contain the tutorials from the great book, (The Rust Programming Language)[https://doc.rust-lang.org/book/README.html].
+This repo is my experiments dabbling with rustlang. At least at first it will mainly contain the tutorials from the great book, [The Rust Programming Language](https://doc.rust-lang.org/book/README.html).
