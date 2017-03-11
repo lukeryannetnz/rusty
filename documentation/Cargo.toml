@@ -1,0 +1,6 @@
+[package]
+name = "documentation"
+version = "0.1.0"
+authors = ["Luke Ryan <luke.ryan@xero.com>"]
+
+[dependencies]
