@@ -25,10 +25,28 @@ fn printfloatingpoint() {
     println!("{}", pi);
 }
 
+fn printtuple(){
+    let tuple: (i32, &str) = (13, "honeybadger");
+    println!("({},{})", tuple.0, tuple.1);
+}
+
+fn printsinglevaluetuple(){
+    let singlevaluetuple: (&str,) = ("single value tuple",); // the comma differentiates this from a regular value in parenthesis.
+    println!("({},)", singlevaluetuple.0)
+}
+
+fn message() -> u32 {
+    15
+}
+
 fn main() {
     printarray();
     printslice();
     printchar();
     printfloatingpoint();
+    printtuple();
+    printsinglevaluetuple();
+    let fnpointer = message;
+    println!("This integer was printed via a variable binding function pointer! {}", fnpointer());
     println!("done");
 }
