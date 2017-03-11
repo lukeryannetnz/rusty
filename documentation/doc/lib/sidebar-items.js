@@ -1,0 +1,1 @@
+initSidebarItems({"fn":[["returnfive","Sample function that returns the integer 5."]]});
