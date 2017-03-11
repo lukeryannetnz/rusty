@@ -21,16 +21,15 @@ fn printchar() {
 
 fn printfloatingpoint() {
     let pi: f32 = 3.14;
-    14;
     println!("{}", pi);
 }
 
-fn printtuple(){
+fn printtuple() {
     let tuple: (i32, &str) = (13, "honeybadger");
     println!("({},{})", tuple.0, tuple.1);
 }
 
-fn printsinglevaluetuple(){
+fn printsinglevaluetuple() {
     let singlevaluetuple: (&str,) = ("single value tuple",); // the comma differentiates this from a regular value in parenthesis.
     println!("({},)", singlevaluetuple.0)
 }
@@ -47,6 +46,7 @@ fn main() {
     printtuple();
     printsinglevaluetuple();
     let fnpointer = message;
-    println!("This integer was printed via a variable binding function pointer! {}", fnpointer());
+    println!("This integer was printed via a variable binding function pointer! {}",
+             fnpointer());
     println!("done");
 }
