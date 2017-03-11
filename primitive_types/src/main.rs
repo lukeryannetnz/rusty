@@ -16,7 +16,7 @@ fn printslice() {
 
 fn printchar() {
     let thumbsup: char = '👍'; //chars are 4 bytes so hold any unicode character
-    println!("{}", thumbsup)
+    println!("{}", thumbsup);
 }
 
 fn printfloatingpoint() {
@@ -31,11 +31,11 @@ fn printtuple() {
 
 fn printsinglevaluetuple() {
     let singlevaluetuple: (&str,) = ("single value tuple",); // the comma differentiates this from a regular value in parenthesis.
-    println!("({},)", singlevaluetuple.0)
+    println!("({},)", singlevaluetuple.0);
 }
 
 fn message() -> u32 {
-    15
+    15 // note: no semi-colon here as this is an expression (returns a value), not a statement. Expressions don't end in semicolons in rust, only statements do.
 }
 
 fn main() {
